@@ -7,4 +7,4 @@ aws ecr get-login-password --region $REGION | docker login --username AWS --pass
 pip install -r src/requirements.txt
 
 # python src/main.py --buildspec jittor/buildspec.yml --framework jittor
-python src/main.py --buildspec jittor/buildspec.yml --framework pytorch --image_types training --device_types cpu --py_versions py3
+python src/main.py --buildspec jittor/buildspec.yml --framework jittor --image_types training --device_types cpu --py_versions py3
