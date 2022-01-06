@@ -48,7 +48,7 @@ images:
   BuildE3CPUJTTrainPy3DockerImage:
     <<: *TRAINING_REPOSITORY
     build: &JITTOR_CPU_TRAINING_PY3 false
-    image_size_baseline: 5000
+    image_size_baseline: 6000
     device_type: &DEVICE_TYPE cpu
     python_version: &DOCKER_PYTHON_VERSION py3
     tag_python_version: &TAG_PYTHON_VERSION py38
@@ -74,7 +74,7 @@ images:
   BuildSageMakerCPUJTTrainPy3DockerImage:
     <<: *TRAINING_REPOSITORY
     build: &JITTOR_CPU_TRAINING_PY3 false
-    image_size_baseline: 5000
+    image_size_baseline: 6000
     base_image_name: BuildE3CPUJTTrainPy3DockerImage
     device_type: &DEVICE_TYPE cpu
     python_version: &DOCKER_PYTHON_VERSION py3
@@ -117,7 +117,7 @@ images:
   BuildE3CPUJTInferencePy3DockerImage:
     <<: *INFERENCE_REPOSITORY
     build: &JITTOR_CPU_INFERENCE_PY3 false
-    image_size_baseline: 4899
+    image_size_baseline: 6000
     device_type: &DEVICE_TYPE cpu
     python_version: &DOCKER_PYTHON_VERSION py3
     tag_python_version: &TAG_PYTHON_VERSION py38
@@ -143,7 +143,7 @@ images:
   BuildSageMakerCPUJTInferencePy3DockerImage:
     <<: *INFERENCE_REPOSITORY
     build: &JITTOR_CPU_INFERENCE_PY3 false
-    image_size_baseline: 4899
+    image_size_baseline: 6000
     base_image_name: BuildE3CPUJTInferencePy3DockerImage
     device_type: &DEVICE_TYPE cpu
     python_version: &DOCKER_PYTHON_VERSION py3
